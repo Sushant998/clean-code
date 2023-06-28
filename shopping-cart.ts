@@ -15,7 +15,7 @@ export class ShoppingCartComponent implements OnInit {
     this.items = this.items.filter(i => i !== item);
   }
 
-  calculateTotal() {
+  calculateTotalPrize() {
     return this.items.reduce((acc, item) => acc + item.price, 0);
   }
 
