@@ -1,0 +1,12 @@
+<h1>Shopping Cart</h1>
+
+<ul>
+  <li *ngFor="let item of items">
+    {{ item.name }} - {{ item.price }}
+  </li>
+</ul>
+
+<button (click)="addItem()">Add Item</button>
+<button (click)="removeItem()">Remove Item</button>
+<button (click)="calculateTotal()">Calculate Total</button>
+<button (click)="displayItems()">Display Items</button>
